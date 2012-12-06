@@ -20,5 +20,5 @@ You'll need to remove the calls to `log_notice()` if you're not using Flamework.
 
     include('lib_sizelimit.php');
 
-That's it - it will just do it's thing, logging a notice about memory usage at the end of each run.
+That's it - it will just do its thing, logging a notice about memory usage at the end of each run.
 It will log a second notice if the child is going to be terminated.
