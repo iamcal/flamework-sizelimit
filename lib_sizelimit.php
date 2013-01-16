@@ -99,7 +99,7 @@
 		# Read process memory statistics from /proc/self/statm (Linux only)
 		#
 
-		$lines = file('/proc/self/statm');
+		$lines = @file('/proc/self/statm');
 		$bits = explode(' ', $lines[0]);
 
 		return array(

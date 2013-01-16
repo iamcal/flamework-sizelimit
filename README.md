@@ -4,7 +4,7 @@ This library registers a shutdown function which checks the process size of the 
 If the child exeeds the configured memory limit, it will be shutdown cleanly after the request (and restarted).
 This is a safeguard against processes growing bloated because of bad code and bringing down your server.
 
-This probably only works for Apache on Linux, with prefork MPM.
+This probably only works for Apache on Linux, with prefork MPM, but should silently do nothing on other platforms.
 
 This library is designed to be used with <a href="https://github.com/exflickr/flamework">Flamework</a>, but works standalone too.
 You'll need to remove the calls to `log_notice()` if you're not using Flamework.
