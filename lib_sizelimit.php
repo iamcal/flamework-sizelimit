@@ -131,8 +131,7 @@
 		#
 
 		if (function_exists('apache_child_terminate')){
-			apache_child_terminate();
-			return;
+			if (apache_child_terminate()) return;
 		}
 
 
