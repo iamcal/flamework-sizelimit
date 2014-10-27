@@ -140,7 +140,7 @@
 		#
 
 		if (function_exists('posix_kill')){
-			posix_kill(getmypid(), 28);
+			posix_kill(getmypid(), 30);
 			return;
 		}
 
